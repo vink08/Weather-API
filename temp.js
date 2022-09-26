@@ -8,7 +8,7 @@ const Temp = () => {
   const [tempInfo ,setTempInfo]=useState("")
   const getWeatherInfo=async()=>{
     try{
-        let url=`https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=c9b91090b032efb2ed8ceed3073a02fb&units=metric`;
+        let url=`https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=API-KEY&units=metric`;
 
         const res = await fetch(url);
         const data=await res.json();
